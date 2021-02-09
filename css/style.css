@@ -2,28 +2,65 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #F3F5F9;
 }
 
 /* TYPOGRAPHY */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-weight: 500;
+  margin: 0;
+}
+h1 {
+  font-size: 68px;
+  letter-spacing: -1px;
+  color: white;
+}
+h2 {
+  font-size: 32px;
+  letter-spacing: -1px;
+  line-height: 39.5px;
+  color: #031B4F;
 }
 a {
   font-size: 16px;
 }
+.p--large {
+  font-size: 24px;
+  font-weight: 500;
+}
 /* COLORS */
+.bg--primary {
+  background-color: #031B4F;
+}
+.bg--secondary {
+  background-color: #006AFF;
+}
+.bg--white {
+  background-color: #fff;
+}
 .text--primary {
   color: #031B4F;
 }
 .text--secondary {
   color: #006AFF;
 }
+.text--grey {
+  color: #5B6987;
+}
+.text--white {
+  color: #fff;
+}
 
 /* UTILITY */
 .list-inline {
   margin-bottom: 0px;
+}
+.shadow_linear {
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2)
+}
+.p_relative {
+  position: relative;
 }
 
 /* BUTTONS */
@@ -42,6 +79,21 @@ a {
   background-color: transparent;
   font-size: 18px;
   padding: 0px;
+}
+.btn--fulllwidth {
+  width: calc(100% - 40px);
+  margin: 10px 20px 0;
+  font-weight: 500;
+  height: 35px;
+}
+.btn--account {
+  color: #fff;
+  background-color: #006AFF;
+  transition: 0.5s
+}
+.btn--account:hover {
+  color: #fff;
+  background-color: #1633ff;
 }
 
 /* HEADER */
@@ -73,3 +125,58 @@ header .ico {
 #logo img {
   height: 35px;
 }
+/* Hero */
+#header_hero {
+  min-height: 580px;
+  margin-top: 75px;
+  background-image: url("../img/hero-bg.svg");
+  background-color: #006AFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+}
+.hero__text {
+  margin: 115px 0;
+}
+.hero__text .p--large {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 15px 0;
+}
+.hero__signup {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 45px 0;
+  margin-top: 95px;
+}
+.hero__signup h2 {
+  margin-bottom: 5px;
+}
+.hero__signup a {
+  font-size: inherit;
+  text-decoration: underline;
+  color: #006AFF;
+}
+.hero__signup small {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.form--signup input{
+  height: 50px;
+  border: 1px solid rgb(229,232,237, 0.5);
+  border-radius: 5px;
+  padding-left: 5px;
+}
+.form--signup input, .form--sigunp input::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 3;
+}
+.google {
+  height: 24px;
+  opacity: 65%;
+  position: absolute;
+  left: 10px;
+}
+
+/* TODO: responsive per allineamento elementi hero*/

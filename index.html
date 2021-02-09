@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- /Google Font -->
   <link rel="stylesheet" href="css/style.css">
   <title>DigitalOcean | The developer cloud</title>
@@ -64,7 +64,42 @@
 
   <!-- Header Hero -->
   <div id="header_hero">
-
+    <div class="container">
+      <div class="row">
+        <!-- Header Hero > Hero left -->
+        <div class="col-xs-12 col-sm-7">
+          <div class="hero__text">
+            <h1>The simplest cloud platform for developers & teams</h1>
+            <p class="p--large">Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand</p>
+          </div>
+        </div>
+        <!-- Header Hero > /Hero left -->
+        <!-- Header Hero > Hero right -->
+        <div class="col-xs-12 col-sm-5">
+          <div class="hero__signup text-center">
+            <h2>Deploy your app in seconds.</h2>
+            <h2 class="text--secondary">Get started now.</h2>
+            <form action="index.html" method="post">
+              <div class="form--signup">
+                <label for="inputmail" class="hidden" >Email address</label>
+                <input type="email" placeholder="Email" class="btn--fulllwidth" id="inputmail">
+              </div>
+              <div class="form--signup">
+                <label for="inputmail" class="hidden" >Email address</label>
+                <input type="password" placeholder="Password" class="btn--fulllwidth" id="inputmail">
+              </div>
+              <button type="submit" class="btn btn--fulllwidth btn--account bg--secondary text--white ">Create your account</button>
+              <button class="btn btn--fulllwidth bg--white shadow_linear p_relative" >
+                <img class="google" src="img/google-icon.svg" alt="Google icon">
+                Sign up with google
+              </button>
+            </form>
+            <small>By signing up you agree to the <a href="#">Terms of Service</a><small>
+          </div>
+        </div>
+        <!-- Header Hero > /Hero right -->
+      </div>
+    </div>
   </div>
   <!-- /Header Hero -->
 </header>

@@ -3,9 +3,73 @@ html {
 }
 body {
   font-family: 'Inter', sans-serif;
+  background-color: #F3F5F9;
 }
 
 /* TYPOGRAPHY */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
+}
+a {
+  font-size: 16px;
+}
+/* COLORS */
+.text--primary {
+  color: #031B4F;
+}
+.text--secondary {
+  color: #006AFF;
+}
+
+/* UTILITY */
+.list-inline {
+  margin-bottom: 0px;
+}
+
+/* BUTTONS */
+.btn--signup {
+  color: #006AFF;
+  background-color: #fff;
+  border: 1px solid #006AFF;
+  transition: 0.5s
+}
+.btn--signup:hover {
+  color: #fff;
+  background-color: #006AFF;
+  border: 1px solid #006AFF
+}
+.btn--mobile {
+  background-color: transparent;
+  font-size: 18px;
+  padding: 0px;
+}
+
+/* HEADER */
+header a {
+  color: #031B4F;
+  font-weight: 500;
+  text-decoration: none;
+}
+header a:hover {
+  color: #006AFF;
+  font-weight: 500;
+  text-decoration: none;
+}
+header .ico {
+  font-size: 14px;
+  margin-left: 2px;
+}
+
+/* Header Top */
+#header_top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  line-height: 75px;
+  background-color: white;
+}
+#logo img {
+  height: 35px;
 }

@@ -314,6 +314,33 @@ header .ico {
   margin: 5px 0;
 }
 
+/* Customers section */
+#customers {
+  background-color: #031B4F;
+  background-image: url("../img/map-section-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px 0 40px;
+}
+#customers table {
+  border-top: hidden;
+}
+#customers h2 {
+  margin-bottom: 20px;
+  font-size: 38px;
+}
+#customers th {
+  color: white;
+}
+#customers td {
+  color: rgba(255, 255, 255, 0.6);
+}
+#customers a {
+  color: #00D7D2;
+  font-size: 14px;
+  text-decoration: none;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 992px) {
   h1 {

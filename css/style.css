@@ -92,12 +92,6 @@ a {
 .list-inline {
   margin-bottom: 0px;
 }
-.shadow_linear {
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.2)
-}
-.relative {
-  position: relative;
-}
 .pv_1 {
   padding: 70px 0;
 }
@@ -131,11 +125,15 @@ a {
 .btn--account {
   color: #fff;
   background-color: rgb(0,106,255, 0.70);
-  transition: 0.5s
+  transition: 0.5s;
 }
 .btn--account:hover {
   color: #fff;
   background-color: #1633ff;
+}
+.btn--google {
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  position: relative;
 }
 
 /* HEADER */
@@ -217,7 +215,7 @@ header .ico {
 
 /* TODO: FOCUS CAMPI FORM */
 
-.google {
+.btn--google img {
   height: 24px;
   opacity: 70%;
   position: absolute;
@@ -243,9 +241,9 @@ header .ico {
   margin-bottom: 10px;
 }
 .process__list li {
-  border-left: 1px solid #cbcbcb;
+  border-left: 2px solid rgb(203,203,203, 0.5);
   border-radius: 1px;
-  transition: 0.2s linear;
+  transition: 0.3s linear;
 }
 .process__list a {
   text-decoration: none;
@@ -274,7 +272,7 @@ header .ico {
   background-color: #F3F5F9;
   padding: 75px 0 60px;
 }
-#carousel .p--medium{
+#carousel .p--medium {
   margin: 20px 0 40px;
 }
 .carousel__slideshow img {
@@ -292,12 +290,28 @@ header .ico {
 .carousel__slideshow button:hover {
   opacity: 100%;
 }
-.carousel__slideshow p{
+.carousel__slideshow p {
   font-weight: 500;
   margin: 20px 0;
 }
 .carousel__bullet {
   color: #006AFF;
+}
+
+/* Features section */
+#features {
+  padding: 75px 0;
+}
+#features img {
+  height: 70px;
+  width: 70px;
+  margin: 15px 0;
+}
+#features h2 {
+  margin-bottom: 20px;
+}
+#features h4 {
+  margin: 5px 0;
 }
 
 /* RESPONSIVE */
@@ -313,19 +327,15 @@ header .ico {
   .pv_2 {
     padding: 75px 0 0 ;
   }
-
   #reliable img {
     width: calc((100% / 2) - 12px);
     display: inline-block;
     padding: 20px;
   }
-
   h5, .a__section {
     font-size: 22px;
   }
-
   .carousel__slideshow button {
     display: none;
   }
-
 }

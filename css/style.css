@@ -269,6 +269,36 @@ header .ico {
   margin: 15px 0;
 }
 
+/* Carousel section */
+#carousel {
+  background-color: #F3F5F9;
+  padding: 75px 0 60px;
+}
+#carousel .p--medium{
+  margin: 20px 0 40px;
+}
+.carousel__slideshow img {
+  max-width: 60%;
+  height: auto;
+  margin: 0 20px;
+}
+.carousel__slideshow button {
+  border: none;
+  opacity: 50%;
+  color: #031B4F;
+  background-color: transparent;
+  transition: 0.5s;
+}
+.carousel__slideshow button:hover {
+  opacity: 100%;
+}
+.carousel__slideshow p{
+  font-weight: 500;
+  margin: 20px 0;
+}
+.carousel__bullet {
+  color: #006AFF;
+}
 
 /* RESPONSIVE */
 @media screen and (max-width: 992px) {
@@ -292,6 +322,10 @@ header .ico {
 
   h5, .a__section {
     font-size: 22px;
+  }
+
+  .carousel__slideshow button {
+    display: none;
   }
 
 }

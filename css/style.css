@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 68px;
   letter-spacing: -1px;
-  color: white;
+  color: #fff;
 }
 h2 {
   font-size: 32px;
@@ -22,8 +22,18 @@ h2 {
   line-height: 39.5px;
   color: #031B4F;
 }
+h4 {
+  font-size: 18px;
+  letter-spacing: 0.7;
+  text-transform: uppercase;
+  color: #5B6987;
+}
 a {
   font-size: 16px;
+}
+.a__section {
+  text-decoration: none;
+  color: #006AFF;
 }
 .p--large {
   font-size: 24px;
@@ -136,7 +146,7 @@ header .ico {
 #header_hero {
   min-height: 580px;
   margin-top: 75px;
-  background-image: url("../img/hero-bg.svg");
+  /* background-image: url("../img/hero-bg.svg"); */
   background-color: #006AFF;
   background-repeat: no-repeat;
   background-size: cover;
@@ -188,7 +198,18 @@ header .ico {
   left: 10px;
 }
 
-/* TODO: responsive per allineamento elementi hero*/
+/* MAIN */
+/* Reliable banner */
+#reliable {
+  background-color: #F3F5F9;
+  padding: 50px 0 25px;
+}
+#reliable img {
+  width: calc((100% / 6) - 4px);
+  padding: 5px;
+}
+
+/* RESPONSIVE */
 @media screen and (max-width: 992px) {
   h1 {
     font-size: 40px;
@@ -201,4 +222,15 @@ header .ico {
   .pv_2 {
     padding: 75px 0 0 ;
   }
+
+  #reliable img {
+    width: calc((100% / 2) - 12px);
+    display: inline-block;
+    padding: 20px;
+  }
+
+  h4, .a__section {
+    font-size: 22px;
+  }
+
 }

@@ -143,14 +143,14 @@ a {
   transform: translate(1px, 1px);
 }
 .btn--start {
-  color: #fff;
-  background-color: #006AFF;
+  color: #006AFF;
+  background-color: #fff;
   border: 1px solid #fff;
-  transition: 0.5s
+  transition: 0.5s;
 }
 .btn--start:hover {
   opacity: 0.5;
-  color: #fff;
+  color: #006AFF;
 }
 
 /* HEADER */
@@ -394,6 +394,35 @@ header .ico {
 }
 #getstart h2 {
   margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #031B4F;
+  padding: 75px 0 60px;
+}
+
+/* Footer left */
+.footer__left p:first-of-type {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 10px 0 5px;
+}
+.footer__left a {
+  display: inline-block;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+.footer__left a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* Footer right */
+.footer__right li {
+  margin: 10px 0;
+}
+.footer__right a {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* RESPONSIVE */

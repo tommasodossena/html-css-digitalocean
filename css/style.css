@@ -142,6 +142,16 @@ a {
   background: #F3F5F9;
   transform: translate(1px, 1px);
 }
+.btn--start {
+  color: #fff;
+  background-color: #006AFF;
+  border: 1px solid #fff;
+  transition: 0.5s
+}
+.btn--start:hover {
+  opacity: 0.5;
+  color: #fff;
+}
 
 /* HEADER */
 header a {
@@ -366,9 +376,24 @@ header .ico {
   padding: 75px 0;
   background-color: #fff;
 }
+.slideshow__slide img {
+  max-width: 300px;
+  width: 90%;
+  height: auto;
+}
 .slideshow__slide blockquote {
   border: 0;
   margin: 10px 0 5px;
+}
+
+/* Get start banner */
+#getstart {
+  background-image: url("../img/background-pattern.svg");
+  background-size: cover;
+  padding: 75px 0 60px;
+}
+#getstart h2 {
+  margin-bottom: 20px;
 }
 
 /* RESPONSIVE */
@@ -392,9 +417,10 @@ header .ico {
   h5, .a__section {
     font-size: 22px;
   }
-  .carousel__slideshow button {
+  .carousel__slideshow button, .reputation__slideshow button {
     display: none;
   }
 }
 
-/* TODO: CLASSI PADDING SECTION */
+/* TODO: REFACTORING CLASSI PADDING SECTION? */
+/* TODO: p--large RESPONSIVE - rompe a w300px reputation container - GALAXY FOLD DISPLAY */

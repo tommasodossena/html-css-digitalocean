@@ -94,7 +94,7 @@ a {
 }
 
 /* BUTTONS */
-.btn:focus, .btn:active:focus {
+.btn, .btn:focus, .btn:active:focus {
   outline: none;
 }
 .btn--signup {
@@ -186,7 +186,7 @@ header .ico {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
-  padding: 75px;
+  padding: 75px 0;
 }
 .hero__text {
   margin: 0 25px;
@@ -442,7 +442,7 @@ footer {
   border: 4px solid #fff;
   border-radius: 50%;
   box-sizing: content-box;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
 }
 .sammy__btn {
   display: inline-block;
@@ -452,7 +452,7 @@ footer {
   border: none;
   border-radius: 5px;
   background-color: #006AFF;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
   padding: 0;
 }
 .sammy__btn img {

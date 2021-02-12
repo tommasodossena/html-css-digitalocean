@@ -1,472 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- /Google Font -->
-  <link rel="stylesheet" href="css/style.css">
-  <title>DigitalOcean | The developer cloud</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /Google Font -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>DigitalOcean | The developer cloud</title>
+  </head>
 
-<body>
-
-<header>
-  <!-- Header Top -->
-  <div id="header_top">
-    <div class="container">
-      <div class="row">
-        <!-- Header Top > Logo -->
-        <div class="col-xs-6 col-md-2">
-          <div id="logo">
-            <a href="#"><img src="img/logo.png" alt="DigitalOcean logo"></a>
-          </div>
-        </div>
-        <!-- Header Top > /Logo -->
-        <!-- Header Top > Main_nav -->
-        <div class="col-md-6">
-          <nav id="main_nav" class="visible-md visible-lg">
-            <ul class="list-inline text-center">
-              <li><a href="#">Products<i class="ico fas fa-angle-down"></i></a></li>
-              <li><a href="#">Customers</a></li>
-              <li><a href="#">Community<i class="ico fas fa-angle-down"></i></a></li>
-              <li><a href="#">Pricing</a></li>
-            </ul>
-          </nav>
-        </div>
-        <!-- Header Top > /Main_nav -->
-        <!-- Header Top > Side_nav -->
-        <div class="col-xs-6 col-md-4 text-right">
-          <nav id="side_nav" class="visible-md visible-lg">
-            <ul class="list-inline text-center">
-              <li><a href="#">Docs</a></li>
-              <li><a href="#">Support<i class="ico fas fa-angle-down"></i></a></li>
-              <li><a href="#">Login</a></li>
-              <li><button class="btn btn--signup">Sign Up</button></li>
-            </ul>
-          </nav>
-          <button class="btn btn--mobile hidden-md hidden-lg"><i class="fas fa-bars text--secondary"></i></button>
-        </div>
-        <!-- /Header Top > /Side_nav -->
-      </div>
-    </div>
-  </div>
-  <!-- /Header Top -->
-
-  <!-- Header Hero -->
-  <div id="header_hero">
-    <div class="container">
-      <div class="row">
-        <!-- Header Hero > Hero left -->
-        <div class="col-xs-12 col-sm-7">
-          <div class="hero__text">
-            <h1>The simplest cloud platform for developers & teams</h1>
-            <p class="p--large">Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
-          </div>
-        </div>
-        <!-- Header Hero > /Hero left -->
-        <!-- Header Hero > Hero right -->
-        <div class="col-xs-12 col-sm-5">
-          <div class="hero__signup text-center">
-            <h3>Deploy your app in seconds.</h3>
-            <h3 class="text--secondary">Get started now.</h3>
-            <form action="index.html" method="post">
-              <div class="form--signup">
-                <label for="inputmail" class="hidden" >Email address</label>
-                <input type="email" placeholder="Email" class="btn--fulllwidth" id="inputmail" required>
-              </div>
-              <div class="form--signup">
-                <label for="inputpassword" class="hidden" >Email address</label>
-                <input type="password" placeholder="Password" class="btn--fulllwidth" id="inputpassword" required>
-              </div>
-              <button type="submit" class="btn btn--fulllwidth btn--account bg--secondary text--white ">Create your account</button>
-            </form>
-            <button class="btn btn--fulllwidth btn--google bg--white" >
-              <img src="img/google-icon.svg" alt="Google icon">
-              Sign up with google
-            </button>
-            <small>By signing up you agree to the <a href="#">Terms of Service</a></small>
-          </div>
-        </div>
-        <!-- Header Hero > /Hero right -->
-      </div>
-    </div>
-  </div>
-  <!-- /Header Hero -->
-</header>
-
-<main>
-  <!-- Reliable banner -->
-  <section id="reliable">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <h5>Innovative businesses trust digitalocean</h5>
-          <img src="img/docker.svg" alt="Docker logo">
-          <img src="img/gitlab.svg" alt="GitLab logo">
-          <img src="img/slack.svg" alt="Slack logo">
-          <img src="img/hashicorp.svg" alt="HashiCorp logo">
-          <img src="img/wework.svg" alt="Wework logo">
-          <img src="img/splunk.svg" alt="Splunk logo">
-          <a class="a--section" href="#">View customers strories &#62;</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /Reliable banner -->
-
-  <!-- Process section -->
-  <section id="process">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-xs-12">
-          <h2>Deploy and scale seamlessly</h2>
-          <p class="p--medium">Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD enviroments.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container__small">
-      <div class="container-fluid">
-
-        <div class="row process__box">
-
-          <div class="col-xs-12 col-md-4 text-left">
-            <ul class="process__list list-unstyled">
-              <li><a class="p--medium" href="#">Deploy</a></li>
-              <li><a class="p--medium" href="#">Manage</a></li>
-              <li><a class="p--medium" href="#">Secure</a></li>
-              <li><a class="p--medium" href="#">Scale</a></li>
-              <li><a class="p--medium" href="#">Monitor</a></li>
-            </ul>
-          </div>
-
-          <div class="col-xs-12 col-md-8">
-            <div class="row process__list_icon">
-              <div class="col-xs-12 col-md-6">
-                <img src="img/ico_1.svg" alt="Cluster icon">
-                <h4>Cluster deployments</h4>
-                <p>Provision multiple Droplets (virtual machines) in second with our control panel, CLI, or directly against our API.</p>
-              </div>
-              <div class="col-xs-12 col-md-6">
-                <img src="img/ico_2.svg" alt="Drop icon">
-                <h4>Optimized compute types</h4>
-                <p>Get the compute resources you need with the standard or optimized Droplets</p>
+  <body>
+    <header>
+      <!-- Header Top -->
+      <div id="header_top">
+        <div class="container">
+          <div class="row">
+            <!-- Header Top > Logo -->
+            <div class="col-xs-6 col-md-2">
+              <div id="logo">
+                <a href="#"
+                  ><img src="img/logo.png" alt="DigitalOcean logo"
+                /></a>
               </div>
             </div>
-            <div class="row">
-              <div class="col-xs-12 col-md-6">
-                <img src="img/ico_3.svg" alt="One click icon">
-                <h4>One-click apps</h4>
-                <p>Skip the install and configuration process with the pre-built open source images supporting Rails, Cassandra, Docker and more.</p>
+            <!-- Header Top > /Logo -->
+            <!-- Header Top > Main_nav -->
+            <div class="col-md-6">
+              <nav id="main_nav" class="visible-md visible-lg">
+                <ul class="list-inline text-center">
+                  <li>
+                    <a href="#"
+                      >Products<i class="ico fas fa-angle-down"></i
+                    ></a>
+                  </li>
+                  <li><a href="#">Customers</a></li>
+                  <li>
+                    <a href="#"
+                      >Community<i class="ico fas fa-angle-down"></i
+                    ></a>
+                  </li>
+                  <li><a href="#">Pricing</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!-- Header Top > /Main_nav -->
+            <!-- Header Top > Side_nav -->
+            <div class="col-xs-6 col-md-4 text-right">
+              <nav id="side_nav" class="visible-md visible-lg">
+                <ul class="list-inline text-center">
+                  <li><a href="#">Docs</a></li>
+                  <li>
+                    <a href="#">Support<i class="ico fas fa-angle-down"></i></a>
+                  </li>
+                  <li><a href="#">Login</a></li>
+                  <li><button class="btn btn--signup">Sign Up</button></li>
+                </ul>
+              </nav>
+              <button class="btn btn--mobile hidden-md hidden-lg">
+                <i class="fas fa-bars text--secondary"></i>
+              </button>
+            </div>
+            <!-- /Header Top > /Side_nav -->
+          </div>
+        </div>
+      </div>
+      <!-- /Header Top -->
+
+      <!-- Header Hero -->
+      <div id="header_hero">
+        <div class="container">
+          <div class="row">
+            <!-- Header Hero > Hero left -->
+            <div class="col-xs-12 col-sm-7">
+              <div class="hero__text">
+                <h1>The simplest cloud platform for developers & teams</h1>
+                <p class="p--large">
+                  Deploy, manage, and scale cloud applications faster and more
+                  efficiently on DigitalOcean. We make managing infrastructure
+                  easy for teams and businesses, whether you're running one
+                  virtual machine or ten thousand.
+                </p>
               </div>
-              <div class="col-xs-12 col-md-6">
-                <img src="img/ico_4.svg" alt="Globe">
-                <h4>Global avaiability</h4>
-                <p>Deploy to any of our data center regions around the world.</p>
+            </div>
+            <!-- Header Hero > /Hero left -->
+            <!-- Header Hero > Hero right -->
+            <div class="col-xs-12 col-sm-5">
+              <div class="hero__signup text-center">
+                <h3>Deploy your app in seconds.</h3>
+                <h3 class="text--secondary">Get started now.</h3>
+                <form action="index.html" method="post">
+                  <div class="form--signup">
+                    <label for="inputmail" class="hidden">Email address</label>
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      class="btn--fulllwidth"
+                      id="inputmail"
+                      required
+                    />
+                  </div>
+                  <div class="form--signup">
+                    <label for="inputpassword" class="hidden"
+                      >Email address</label
+                    >
+                    <input
+                      type="password"
+                      placeholder="Password"
+                      class="btn--fulllwidth"
+                      id="inputpassword"
+                      required
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn--fulllwidth btn--account bg--secondary text--white"
+                  >
+                    Create your account
+                  </button>
+                </form>
+                <button class="btn btn--fulllwidth btn--google bg--white">
+                  <img src="img/google-icon.svg" alt="Google icon" />
+                  Sign up with google
+                </button>
+                <small
+                  >By signing up you agree to the
+                  <a href="#">Terms of Service</a></small
+                >
               </div>
+            </div>
+            <!-- Header Hero > /Hero right -->
+          </div>
+        </div>
+      </div>
+      <!-- /Header Hero -->
+    </header>
+
+    <main>
+      <!-- Reliable banner -->
+      <section id="reliable">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <h5>Innovative businesses trust digitalocean</h5>
+              <img src="img/docker.svg" alt="Docker logo" />
+              <img src="img/gitlab.svg" alt="GitLab logo" />
+              <img src="img/slack.svg" alt="Slack logo" />
+              <img src="img/hashicorp.svg" alt="HashiCorp logo" />
+              <img src="img/wework.svg" alt="Wework logo" />
+              <img src="img/splunk.svg" alt="Splunk logo" />
+              <a class="a--section" href="#">View customers strories &#62;</a>
             </div>
           </div>
         </div>
+      </section>
+      <!-- /Reliable banner -->
 
-      </div>
-    </div>
-
-  </section>
-  <!-- /Process section -->
-
-  <!-- Carousel section -->
-  <section id="carousel">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-xs-12">
-          <h2>Designed for developers</h2>
-          <p class="p--medium">Build more and spend less time managing your infrastructure with our easy-to use control panel and API.</p>
-          <div class="carousel__slideshow">
-            <button><i class="fas fa-angle-left fa-4x"></i></button>
-            <img src="img/carousel-slide01.jpg" alt="Droplets screenshot">
-            <button><i class="fas fa-angle-right fa-4x"></i></button>
-            <p>Create compute servers in 55 second or less.</p>
-          </div>
-          <div class="carousel__bullet">
-            <i class="fas fa-circle"></i>
-            <i class="far fa-circle"></i>
-            <i class="far fa-circle"></i>
-            <i class="far fa-circle"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /Carousel section -->
-
-  <!-- Features section -->
-  <section id="features">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-xs-12">
-          <h2>The features your business needs</h2>
-        </div>
-      </div>
-      <div class="row text-left">
-        <div class="col-xs-12 col-md-4">
-          <img src="img/ico_checklist.svg" alt="Pricing icon">
-          <h4>Predictable pricing</h4>
-          <p>Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
-          <a class="a--section" href="#">Pricing &#62;</a>
-        </div>
-        <div class="col-xs-12 col-md-4">
-          <img src="img/ico_support.svg" alt="Support icon">
-          <h4>World-class service</h4>
-          <p>Free round-the-clock technical support for all customers. You'll feel the love.</p>
-          <a class="a--section" href="#">Support &#62;</a>
-        </div>
-        <div class="col-xs-12 col-md-4">
-          <img src="img/ico_shield.svg" alt="Shield icon">
-          <h4>Reliable platform</h4>
-          <p>More than 100,000 developer teams worldwide trust DigitalOcean to support thei business with a 99,99% uptime SLA for all services.</p>
-          <a class="a--section" href="#">Security &#62;</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /Features section -->
-
-  <!-- Customers section -->
-  <section id="customers">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-xs-12">
-          <h2 class="text--white">Service your customers around the world from 12 regions.</h2>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <table class="table">
-            <tr>
-              <th>AMS2</th>
-              <td>Amsterdam, Netherlands</td>
-              <td><a href="#">Test speed &#62;</a></td>
-            </tr>
-            <tr>
-              <th>AMS3</th>
-              <td>Amsterdam, Netherlands</td>
-              <td><a href="#">Test speed &#62;</a></td>
-            </tr>
-            <tr>
-              <th>BLR1</th>
-              <td>Bangalore, India</td>
-              <td><a href="#">Test speed &#62;</a></td>
-            </tr>
-            <tr>
-              <th>FRA1</th>
-              <td>Frankfurt, German</td>
-              <td><a href="#">Test speed &#62;</a></td>
-            </tr>
-            <tr>
-              <th>LON1</th>
-              <td>London, UK</td>
-              <td><a href="#">Test speed &#62;</a></td>
-            </tr>
-            <tr>
-              <th>NYC1</th>
-              <td>New York, USA</td>
-              <td><a href="#">Test speed &#62;</a></td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="col-xs-12 col-md-6">
-          <table class="table">
-            <tr>
-              <th>AMS2</th>
-              <td>Amsterdam, Netherlands</td>
-              <td><a href="#">Test speed &#62;</a></td>
-            </tr>
-            <tr>
-              <th>AMS3</th>
-              <td>Amsterdam, Netherlands</td>
-              <td><a href="#">Test speed &#62;</a></td>
-            </tr>
-            <tr>
-              <th>BLR1</th>
-              <td>Bangalore, India</td>
-              <td><a href="#">Test speed &#62;</a></td>
-            </tr>
-            <tr>
-              <th>FRA1</th>
-              <td>Frankfurt, German</td>
-              <td><a href="#">Test speed &#62;</a></td>
-            </tr>
-            <tr>
-              <th>LON1</th>
-              <td>London, UK</td>
-              <td><a href="#">Test speed &#62;</a></td>
-            </tr>
-            <tr>
-              <th>NYC1</th>
-              <td>New York, USA</td>
-              <td><a href="#">Test speed &#62;</a></td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /Customers section -->
-
-  <!-- Reputation section -->
-  <section id="reputation">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-xs-12">
-          <h2>Development teams love DigitalOcean</h2>
-
-          <div class="reputation__slideshow">
-            <button><i class="fas fa-angle-left fa-4x"></i></button>
-            <div class="slideshow__slide">
-              <img src="img/rockerbox.png" alt="Rockerbox logo">
-              <blockquote cite="https://www.rockerbox.com/">
-                <p class="p--large">"We have been able to make scaling the technical infrastructure of our business cost effectgive and efficient".</p>
-              </blockquote>
-              <div class="author">
-                <small class="center-block"><strong>Rick O'Toole</strong></small>
-                <small class="center-block">Co-founder and CTO</small>
-              </div>
-              <a class="a--section" href="#">Read story &#62;</a>
+      <!-- Process section -->
+      <section id="process">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-xs-12">
+              <h2>Deploy and scale seamlessly</h2>
+              <p class="p--medium">
+                Our optimized configuration process saves your team time when
+                running and scaling distributed applications, AI & machine
+                learning workloads, hosted services, client websites, or CI/CD
+                enviroments.
+              </p>
             </div>
-            <button><i class="fas fa-angle-right fa-4x"></i></button>
-          </div>
-
-          <div class="carousel__bullet">
-            <i class="fas fa-circle"></i>
-            <i class="far fa-circle"></i>
-            <i class="far fa-circle"></i>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- /Reputation section -->
 
-  <!-- Getstart banner -->
-  <section id="getstart">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-xs-12">
-          <h2 class="text--white">Get start now.</h2>
-          <button class="btn btn-lg btn--start" >
-            Create your account
-          </button>
+        <div class="container__small">
+          <div class="container-fluid">
+            <div class="row process__box">
+              <div class="col-xs-12 col-md-4 text-left">
+                <ul class="process__list list-unstyled">
+                  <li><a class="p--medium" href="#">Deploy</a></li>
+                  <li><a class="p--medium" href="#">Manage</a></li>
+                  <li><a class="p--medium" href="#">Secure</a></li>
+                  <li><a class="p--medium" href="#">Scale</a></li>
+                  <li><a class="p--medium" href="#">Monitor</a></li>
+                </ul>
+              </div>
+
+              <div class="col-xs-12 col-md-8">
+                <div class="row process__list_icon">
+                  <div class="col-xs-12 col-md-6">
+                    <img src="img/ico_1.svg" alt="Cluster icon" />
+                    <h4>Cluster deployments</h4>
+                    <p>
+                      Provision multiple Droplets (virtual machines) in second
+                      with our control panel, CLI, or directly against our API.
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <img src="img/ico_2.svg" alt="Drop icon" />
+                    <h4>Optimized compute types</h4>
+                    <p>
+                      Get the compute resources you need with the standard or
+                      optimized Droplets
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <img src="img/ico_3.svg" alt="One click icon" />
+                    <h4>One-click apps</h4>
+                    <p>
+                      Skip the install and configuration process with the
+                      pre-built open source images supporting Rails, Cassandra,
+                      Docker and more.
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <img src="img/ico_4.svg" alt="Globe" />
+                    <h4>Global avaiability</h4>
+                    <p>
+                      Deploy to any of our data center regions around the world.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- /Getstart banner -->
-</main>
+      </section>
+      <!-- /Process section -->
 
-<footer>
-  <div class="container">
-    <div class="row">
-      <!-- Footer left -->
-      <div class="col-xs-12 col-md-4 footer__left">
-        <img src="img/logo-small.svg" alt="Logo DigitalOcean">
-        <p>&#169; 2018 DigitalOcean, LLC. All rights reserved.</p>
-        <p>Proudly made in NY</p>
-        <ul class="list-unstyled list-inline">
-          <li><a href="#"><i class="ico fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="ico fab fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="ico fab fa-instagram"></i></i></a></li>
-          <li><a href="#"><i class="ico fab fa-youtube"></i></a></li>
-          <li><a href="#"><i class="ico fab fa-linkedin-in"></i></a></li>
-        </ul>
-      </div>
-      <!-- /Footer left -->
+      <!-- Carousel section -->
+      <section id="carousel">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-xs-12">
+              <h2>Designed for developers</h2>
+              <p class="p--medium">
+                Build more and spend less time managing your infrastructure with
+                our easy-to use control panel and API.
+              </p>
+              <div class="carousel__slideshow">
+                <button><i class="fas fa-angle-left fa-4x"></i></button>
+                <img src="img/carousel-slide01.jpg" alt="Droplets screenshot" />
+                <button><i class="fas fa-angle-right fa-4x"></i></button>
+                <p>Create compute servers in 55 second or less.</p>
+              </div>
+              <div class="carousel__bullet">
+                <i class="fas fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Carousel section -->
 
-      <!-- Footer right -->
-      <div class="col-xs-12 col-md-8 footer__right">
+      <!-- Features section -->
+      <section id="features">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-xs-12">
+              <h2>The features your business needs</h2>
+            </div>
+          </div>
+          <div class="row text-left">
+            <div class="col-xs-12 col-md-4">
+              <img src="img/ico_checklist.svg" alt="Pricing icon" />
+              <h4>Predictable pricing</h4>
+              <p>
+                Leave complex pricing structures behind. Always know what you'll
+                pay per month with a flat, industry-leading pricing structure.
+              </p>
+              <a class="a--section" href="#">Pricing &#62;</a>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <img src="img/ico_support.svg" alt="Support icon" />
+              <h4>World-class service</h4>
+              <p>
+                Free round-the-clock technical support for all customers. You'll
+                feel the love.
+              </p>
+              <a class="a--section" href="#">Support &#62;</a>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <img src="img/ico_shield.svg" alt="Shield icon" />
+              <h4>Reliable platform</h4>
+              <p>
+                More than 100,000 developer teams worldwide trust DigitalOcean
+                to support thei business with a 99,99% uptime SLA for all
+                services.
+              </p>
+              <a class="a--section" href="#">Security &#62;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Features section -->
+
+      <!-- Customers section -->
+      <section id="customers">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-xs-12">
+              <h2 class="text--white">
+                Service your customers around the world from 12 regions.
+              </h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <table class="table">
+                <tr>
+                  <th>AMS2</th>
+                  <td>Amsterdam, Netherlands</td>
+                  <td><a href="#">Test speed &#62;</a></td>
+                </tr>
+                <tr>
+                  <th>AMS3</th>
+                  <td>Amsterdam, Netherlands</td>
+                  <td><a href="#">Test speed &#62;</a></td>
+                </tr>
+                <tr>
+                  <th>BLR1</th>
+                  <td>Bangalore, India</td>
+                  <td><a href="#">Test speed &#62;</a></td>
+                </tr>
+                <tr>
+                  <th>FRA1</th>
+                  <td>Frankfurt, German</td>
+                  <td><a href="#">Test speed &#62;</a></td>
+                </tr>
+                <tr>
+                  <th>LON1</th>
+                  <td>London, UK</td>
+                  <td><a href="#">Test speed &#62;</a></td>
+                </tr>
+                <tr>
+                  <th>NYC1</th>
+                  <td>New York, USA</td>
+                  <td><a href="#">Test speed &#62;</a></td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+              <table class="table">
+                <tr>
+                  <th>AMS2</th>
+                  <td>Amsterdam, Netherlands</td>
+                  <td><a href="#">Test speed &#62;</a></td>
+                </tr>
+                <tr>
+                  <th>AMS3</th>
+                  <td>Amsterdam, Netherlands</td>
+                  <td><a href="#">Test speed &#62;</a></td>
+                </tr>
+                <tr>
+                  <th>BLR1</th>
+                  <td>Bangalore, India</td>
+                  <td><a href="#">Test speed &#62;</a></td>
+                </tr>
+                <tr>
+                  <th>FRA1</th>
+                  <td>Frankfurt, German</td>
+                  <td><a href="#">Test speed &#62;</a></td>
+                </tr>
+                <tr>
+                  <th>LON1</th>
+                  <td>London, UK</td>
+                  <td><a href="#">Test speed &#62;</a></td>
+                </tr>
+                <tr>
+                  <th>NYC1</th>
+                  <td>New York, USA</td>
+                  <td><a href="#">Test speed &#62;</a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Customers section -->
+
+      <!-- Reputation section -->
+      <section id="reputation">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-xs-12">
+              <h2>Development teams love DigitalOcean</h2>
+
+              <div class="reputation__slideshow">
+                <button><i class="fas fa-angle-left fa-4x"></i></button>
+                <div class="slideshow__slide">
+                  <img src="img/rockerbox.png" alt="Rockerbox logo" />
+                  <blockquote cite="https://www.rockerbox.com/">
+                    <p class="p--large">
+                      "We have been able to make scaling the technical
+                      infrastructure of our business cost effectgive and
+                      efficient".
+                    </p>
+                  </blockquote>
+                  <div class="author">
+                    <small class="center-block"
+                      ><strong>Rick O'Toole</strong></small
+                    >
+                    <small class="center-block">Co-founder and CTO</small>
+                  </div>
+                  <a class="a--section" href="#">Read story &#62;</a>
+                </div>
+                <button><i class="fas fa-angle-right fa-4x"></i></button>
+              </div>
+
+              <div class="carousel__bullet">
+                <i class="fas fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Reputation section -->
+
+      <!-- Getstart banner -->
+      <section id="getstart">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-xs-12">
+              <h2 class="text--white">Get start now.</h2>
+              <button class="btn btn-lg btn--start">Create your account</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Getstart banner -->
+    </main>
+
+    <footer>
+      <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <h4 class="text--white">Company</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Leadership</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Partner Network</a></li>
-              <li><a href="#">Referral Program</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Press</a></li>
-              <li><a href="#">Legal & Security</a></li>
+          <!-- Footer left -->
+          <div class="col-xs-12 col-md-4 footer__left">
+            <img src="img/logo-small.svg" alt="Logo DigitalOcean" />
+            <p>&#169; 2018 DigitalOcean, LLC. All rights reserved.</p>
+            <p>Proudly made in NY</p>
+            <ul class="list-unstyled list-inline">
+              <li>
+                <a href="#"><i class="ico fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ico fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ico fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ico fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ico fab fa-linkedin-in"></i></a>
+              </li>
             </ul>
           </div>
+          <!-- /Footer left -->
 
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <h4 class="text--white">Products</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">Droplets</a></li>
-              <li><a href="#">Spaces</a></li>
-              <li><a href="#">Kubernetes</a></li>
-              <li><a href="#">Load Balances</a></li>
-              <li><a href="#">Block Storage</a></li>
-              <li><a href="#">Tools & Integrations</a></li>
-              <li><a href="#">One-Click Apps</a></li>
-              <li><a href="#">API</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Documentation</a></li>
-              <li><a href="#">Release Notes</a></li>
-            </ul>
-          </div>
+          <!-- Footer right -->
+          <div class="col-xs-12 col-md-8 footer__right">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <h4 class="text--white">Company</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Leadership</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Partner Network</a></li>
+                  <li><a href="#">Referral Program</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">Legal & Security</a></li>
+                </ul>
+              </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <h4 class="text--white">Community</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">Tutorials</a></li>
-              <li><a href="#">Meetups</a></li>
-              <li><a href="#">Q&A</a></li>
-              <li><a href="#">Write for Donations</a></li>
-              <li><a href="#">Droplets for Demos</a></li>
-              <li><a href="#">Hatch</a></li>
-              <li><a href="#">Shop Swag</a></li>
-              <li><a href="#">Research Program</a></li>
-              <li><a href="#">Current Research</a></li>
-              <li><a href="#">Open Source</a></li>
-            </ul>
-          </div>
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <h4 class="text--white">Products</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">Droplets</a></li>
+                  <li><a href="#">Spaces</a></li>
+                  <li><a href="#">Kubernetes</a></li>
+                  <li><a href="#">Load Balances</a></li>
+                  <li><a href="#">Block Storage</a></li>
+                  <li><a href="#">Tools & Integrations</a></li>
+                  <li><a href="#">One-Click Apps</a></li>
+                  <li><a href="#">API</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Documentation</a></li>
+                  <li><a href="#">Release Notes</a></li>
+                </ul>
+              </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <h4 class="text--white">Support</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">Contact support</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Network Status</a></li>
-            </ul>
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <h4 class="text--white">Community</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">Tutorials</a></li>
+                  <li><a href="#">Meetups</a></li>
+                  <li><a href="#">Q&A</a></li>
+                  <li><a href="#">Write for Donations</a></li>
+                  <li><a href="#">Droplets for Demos</a></li>
+                  <li><a href="#">Hatch</a></li>
+                  <li><a href="#">Shop Swag</a></li>
+                  <li><a href="#">Research Program</a></li>
+                  <li><a href="#">Current Research</a></li>
+                  <li><a href="#">Open Source</a></li>
+                </ul>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <h4 class="text--white">Support</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">Contact support</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Network Status</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
+          <!-- /Footer right -->
         </div>
       </div>
-      <!-- /Footer right -->
+    </footer>
+
+    <!-- Sammy the shark -->
+    <div class="sammy">
+      <div class="sammy__baloon">
+        <span>Can I help? Answer any questions you have about DigitalOcean</span>
+      </div>
+      <div class="sammy__btn">
+          <img src="img/sammy.png" alt="Sammy th shark" />
+      </div>
     </div>
-  </div>
-</footer>
-
-<!-- Sammy the shark -->
-<div class="sammy">
-  <button class="sammy__btn">
-    <img src="img/sammy.png" alt="Sammy th shark">
-  </button>
-</div>
-<!-- /Sammy the shark -->
-
-</body>
+    <!-- /Sammy the shark -->
+    
+  </body>
 </html>

@@ -94,8 +94,8 @@ a {
 }
 
 /* BUTTONS */
-.btn, .btn:focus, .btn:active:focus {
-  outline: none;
+.btn:focus, .btn:active {
+  outline: none !important;
 }
 .btn--signup {
   color: #006AFF;
@@ -148,9 +148,12 @@ a {
 }
 
 /* HEADER */
+header li {
+  padding: 0 10px;
+}
 header a {
   color: #031B4F;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
 }
 header a:hover {
@@ -177,15 +180,18 @@ header .ico {
 #logo img {
   height: 35px;
 }
+#header_top li {
+  padding: 0 7px;
+}
 /* Hero */
 #header_hero {
   min-height: 580px;
   margin-top: 75px;
-  /* background-image: url("../img/hero-bg.svg"); */
+  background-image: url("../img/hero-bg.svg");
   background-color: #006AFF;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left bottom;
+  background-position: bottom;
   padding: 75px 0;
 }
 .hero__text {
@@ -426,12 +432,32 @@ footer {
   position: fixed;
   right: 50px;
   bottom: 50px;
+  transition: 0.5s;
 }
-.sammy::before {
+
+.sammy__btn {
+  position: relative;
+  display: inline-block;
+  height: 70px;
+  line-height: 70px;
+  width: 70px;
+  border: none;
+  border-radius: 5px;
+  background-color: #006AFF;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+  padding: 0;
+  cursor: pointer;
+}
+.sammy__btn img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.sammy__btn::after {
   content: "2";
   position: absolute;
-  top: -10px;
   right: -10px;
+  top: -10px;
   width: 25px;
   height: 25px;
   line-height: 25px;
@@ -443,24 +469,41 @@ footer {
   border-radius: 50%;
   box-sizing: content-box;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 }
-.sammy__btn {
-  display: inline-block;
+.sammy__baloon {
+  position: relative;
+  right: 20px;
+  bottom: -15px;
+  width: 370px;
   height: 70px;
-  line-height: 70px;
-  width: 70px;
-  border: none;
   border-radius: 5px;
-  background-color: #006AFF;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
-  padding: 0;
+  background-color: #fff;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+  padding-left: 10px;
+  display: none;
 }
-.sammy__btn img {
-  width: 100%;
-  height: auto;
+.sammy__baloon span {
+  display: table-cell;
   vertical-align: middle;
+  font-size: 15px;
+  font-weight: 400;
+}
+.sammy__baloon::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: 10px;
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; 
+  border-left:10px solid #fff; 
 }
 
+.sammy:hover .sammy__baloon{
+  display: inline-table;
+}
 /* RESPONSIVE */
 @media screen and (max-width: 992px) {
   h1 {
@@ -480,6 +523,9 @@ footer {
     font-size: 22px;
   }
   .carousel__slideshow button, .reputation__slideshow button {
+    display: none;
+  }
+  .sammy {
     display: none;
   }
 }
